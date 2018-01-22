@@ -16,7 +16,7 @@
 -->
 <!--TODO (1) Change the ConstraintLayout to a FrameLayout-->
 <!--TODO (7) Remove the line that declares the id, we don't need it-->
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -30,7 +30,8 @@
     <!--TODO (4) Set the text size to 20sp-->
     <!--TODO (5) Remove all attributes with the word constraint in them-->
     <!--TODO (6) Remove the default text from the TextView-->
-    <TextView
+     <ScrollView
+     <TextView
         android:id="@+id/text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -40,3 +41,4 @@
         app:layout_constraintRight_toRightOf="@+id/activity_main"
         app:layout_constraintTop_toTopOf="@+id/activity_main" />
 </android.support.constraint.ConstraintLayout>
+</ScrollView>
